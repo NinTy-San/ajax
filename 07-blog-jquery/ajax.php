@@ -40,7 +40,7 @@ $tableau['message'] = '';
         while($article_en_cours = $liste->fetch(PDO::FETCH_ASSOC)){
             $tableau['message'] .= '<div class="col-sm-12 mt-5">';
             $tableau['message'] .= '<h3 class="bg-dark text-white p-2">'. $article_en_cours['titre'] .'</h3>';
-            $tableau['message'] .= '<hr>Ecrit'. $article_en_cours['date_fr'] .' - Catégorie: <a href="" class="filtre_categorie">'. $article_en_cours['categorie'] .'</a><hr>';
+            $tableau['message'] .= '<hr>Ecrit'. $article_en_cours['date_fr'] .' - Catégorie: <a href="" class="filtre_categorie">'. $article_en_cours['categorie'] .'</a> <hr>';
             $tableau['message'] .= '<p>'. $article_en_cours['contenu'] .'</p>';
             $tableau['message'] .= '</div>';
         }
